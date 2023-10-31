@@ -142,6 +142,33 @@ body{
     transition: all .5s ease-in-out;
 }
 
+/* ***************FOOTER********** */
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    margin-top: 7px;
+    color: #fff;
+    font-size: 23px;
+}
+footer .fa-heart{
+    color: red;
+    animation: heart .9s infinite;
+}
+
+@keyframes heart {
+    from{
+        font-size: 1.3rem;
+    }
+
+    to{
+        font-size: 2rem;
+    }
+}
+
 /* ********RESPONSIVE***** */
 @media (max-width: 1000px) {
     .hero-content{
