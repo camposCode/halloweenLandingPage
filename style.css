@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@100;400;700;900&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Creepster', sans-serif;
+}
+
+/* *********NAVBAR******* */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    z-index: 999;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.menu li a{
+    font-size: 21px;
+    position: relative;
+    color: #fff;
+    transition: all .5s ease-in-out;
+}
+
+.logo{
+    color: #fff;
+    font-size: 25px;
+}
+
+.menu li a:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(244, 16, 18);
+    clip-path: polygon(55% 28%, 100% 50%, 57% 76%, 0% 100%, 0% 53%, 0% 0%);
+    height: 3px;
+    width: 0%;
+    transition: all .5s ease-in-out;
+}
+
+.menu li a:hover:after{
+    width: 100%;
+}
+
+.menu li a:hover{
+    color: rgb(244, 16, 18);
+}
+
+.bars{
+    display: none;
+}
+
+.navbar button{
+    height: 25px;
+    width: 125px;
+    border-radius: 5px;
+    font-family: 'poppins', sans-serif;
+    border: none;
+    font-size: 18px;
+    transition: all .5s ease-in-out;
+}
+
+.navbar button:hover{
+    background-color: rgb(244, 16, 18);
+    color: #fff;
+}
+
+
+/* ********HERO********* */
+.hero{
+    background-image: url(img/halloween.webp);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content{
+    width: 50%;
+    margin-left: 50%;
+}
+
+.hero-content h1{
+    font-size: 63px;
+    word-spacing: 5px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.hero-content p{
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 25px;
+    font-size: 18ox;
+}
+
+.icons{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icons i{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.icons i:hover{
+    color: rgb(244, 16, 18);
+    transition: all .5s ease-in-out;
+}
+
